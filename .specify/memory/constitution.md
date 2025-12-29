@@ -1,55 +1,65 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: 1.0.0 -> 2.0.0
+Modified principles: Python Console Todo Application Constitution → The Evolution of Todo — From CLI to Cloud-Native AI Systems
+Added sections: Multi-phase evolution principles, AI agent workflows, Cloud-native architecture guidelines
+Removed sections: Console-only, in-memory specific principles
+Templates requiring updates:
+- .specify/templates/plan-template.md ⚠ pending
+- .specify/templates/spec-template.md ⚠ pending
+- .specify/templates/tasks-template.md ⚠ pending
+- .specify/templates/commands/*.md ⚠ pending
+Follow-up TODOs: Update phase-specific templates to match new architecture
+-->
+
+# The Evolution of Todo — From CLI to Cloud-Native AI Systems Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Spec-Driven Development
+Spec-driven development is the single source of truth across all phases. All development must follow the Spec-Kit Plus methodology with written specifications as the authoritative source for requirements, architecture, and implementation. This ensures consistent, quality implementation aligned with requirements across the entire evolution process.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Agentic Dev Stack Workflow
+The Agentic Dev Stack workflow (Spec → Plan → Tasks → Implementation) must be strictly followed in all phases. Each phase must complete the full workflow before advancing to ensure proper planning, task breakdown, and implementation. This provides structured progression from CLI to cloud-native systems.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Incremental Evolution Without Breaking Changes
+Each phase must incrementally extend the previous system without breaking existing functionality. New capabilities must be added in a backward-compatible manner, ensuring the system remains stable and functional across phase transitions. This maintains continuity while enabling progressive enhancement.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Clear Separation of Concerns
+Clear separation of concerns must be maintained across application, AI, data, and infrastructure layers. Each component must have well-defined responsibilities and interfaces to enable independent evolution and testing. This enables scalable architecture as the system grows in complexity.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Stateless Services with Explicit State Management
+Services should be stateless where applicable, with state managed explicitly via databases or Dapr in later phases. This promotes scalability, reliability, and maintainability as the system evolves from in-memory to distributed architecture. Explicit state management prevents data inconsistencies.
 
-### [PRINCIPLE_6_NAME]
+### VI. AI-Agent Driven Development
+All code and infrastructure must be generated via Claude Code and AI agents without manual boilerplate coding. Human effort should focus on architecture, design decisions, and validation rather than implementation details. This enforces the agentic development approach throughout the evolution.
 
+## Additional Constraints
 
-[PRINCIPLE__DESCRIPTION]
+- Phase I: In-memory, console-only, no persistence
+- Phase II–III: Persistent storage with Neon PostgreSQL and SQLModel
+- Phase III: AI agents interact only through MCP tools
+- Phase IV: Local Kubernetes deployment on Minikube using Docker and Helm
+- Phase V: Event-driven architecture using Kafka and Dapr; deployment to AKS/GKE (or equivalent)
+- No feature leakage between phases
+- All phases must result in a working, reviewable system
+- APIs, AI agents, MCP tools, and events must be explicitly spec-defined
+- Infrastructure must be reproducible locally and in cloud environments
+- Technology stacks must strictly match phase requirements
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Development Workflow
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- No manual coding; all code and infrastructure generated via Claude Code and AI agents
+- Every phase must result in a working, reviewable system
+- APIs, AI agents, MCP tools, and events must be explicitly spec-defined
+- Infrastructure must be reproducible locally and in cloud environments
+- Technology stacks must strictly match phase requirements
+- Each phase meets its functional and architectural objectives
+- System remains stable and functional across phase transitions
+- Specs, plans, tasks, and iterations are traceable and reviewable
+- Final system demonstrates real-world software evolution from CLI to production-grade cloud-native AI platform
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices for this project. All code changes must comply with these principles. Amendments to this constitution require explicit documentation and approval. Version: 2.0.0 | Last Amended: 2025-12-29
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 2.0.0 | **Ratified**: 2025-12-28 | **Last Amended**: 2025-12-29
