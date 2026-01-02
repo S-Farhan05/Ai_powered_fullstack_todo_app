@@ -1,14 +1,14 @@
 <!-- SYNC IMPACT REPORT
-Version change: 1.0.0 -> 2.0.0
-Modified principles: Python Console Todo Application Constitution → The Evolution of Todo — From CLI to Cloud-Native AI Systems
-Added sections: Multi-phase evolution principles, AI agent workflows, Cloud-native architecture guidelines
-Removed sections: Console-only, in-memory specific principles
+Version change: 2.0.0 -> 2.0.1
+Modified principles: None - only date update
+Added sections: None
+Removed sections: None
 Templates requiring updates:
 - .specify/templates/plan-template.md ⚠ pending
 - .specify/templates/spec-template.md ⚠ pending
 - .specify/templates/tasks-template.md ⚠ pending
 - .specify/templates/commands/*.md ⚠ pending
-Follow-up TODOs: Update phase-specific templates to match new architecture
+Follow-up TODOs: None
 -->
 
 # The Evolution of Todo — From CLI to Cloud-Native AI Systems Constitution
@@ -60,6 +60,6 @@ All code and infrastructure must be generated via Claude Code and AI agents with
 
 ## Governance
 
-This constitution supersedes all other development practices for this project. All code changes must comply with these principles. Amendments to this constitution require explicit documentation and approval. Version: 2.0.0 | Last Amended: 2025-12-29
+This constitution supersedes all other development practices for this project. All code changes must comply with these principles. Amendments to this constitution require explicit documentation and approval. Version: 2.0.1 | Last Amended: 2026-01-02
 
-**Version**: 2.0.0 | **Ratified**: 2025-12-28 | **Last Amended**: 2025-12-29
+**Version**: 2.0.1 | **Ratified**: 2025-12-28 | **Last Amended**: 2026-01-02
